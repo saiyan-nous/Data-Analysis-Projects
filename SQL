@@ -1,3 +1,5 @@
+View full details here:-  https://github.com/saiyan-nous/Data-Analysis-Projects.git
+
 --Question1: Produce a SQL Statement that joins all the tables to get the product name, product number and PurchaseTrans
 
 SELECT PT.TransID, PT.OrderID, CONVERT(Date,PT.OrderDate) OrderDate, CONVERT(date,PT.ShipDate) ShipDate, CONVERT(date,PT.DueDate) DueDate,
