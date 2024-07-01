@@ -132,7 +132,7 @@ for creating the new column following DAX expression was written;
             )
     RETURN IF(ISBLANK(_Calc),"Overdue",_Calc)
         
-Snap of new calculated column ,
+Snap of new calculated column,
 
 ![Period of resolution indicator snapshot](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/4106077c-e3b8-44b3-bcc6-8bfa0a8d5e52)
 
@@ -145,9 +145,9 @@ Snap of new calculated column ,
 
 # Insights
 
-A two paged report, derived from Edmonton 311 five (5) years (2013 - 2017) data, was created on Power BI Desktop then exported into pdf.
+A two-paged report, derived from Edmonton 311 five (5) years (2013 - 2017) data, was created on Power BI Desktop, then exported into pdf.
 
-Following inferences can be drawn from the report;
+The following inferences can be drawn from the report;
 
 ### [1] Total Number of Tickets = 267,224
 
@@ -160,9 +160,6 @@ Following inferences can be drawn from the report;
     2017: 5,963 
 
    Number of Closed Tickets = 260,609
-
-
-           thus, higher number of customers are neutral/unsatisfied.
            
 ### [2] Neighbourhood
 
@@ -252,4 +249,4 @@ Average delay will change if different visual filters will be applied.
 
 3.7) Work Planned-Seasonal/Weather Dependent - 2 open tickets
 
-        hence, this figures show the amount of tickets that are unsettled using the aforementioned status detail as a filter.
+        hence, these figures show the number of tickets that are unsettled using the aforementioned status detail as a filter.
