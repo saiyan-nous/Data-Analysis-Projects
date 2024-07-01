@@ -167,12 +167,6 @@ Downtown has the most number of tickets at 5,467 (5,311 of these are closed and 
 
     It is noticed that Strathcona has the most open tickets at 198 followed by Alberta Avenue at 171 then 
     Downtown at 156 despite having the most number of total tickets.
-  
-  ### [3] Average Delay 
-  
-      a) Average delay in arrival(minutes) - 15.09
-      b) Average delay in departure(minutes) - 14.71
-Average delay will change if different visual filters will be applied.
 
  ### [4] Some other insights
  
