@@ -1,71 +1,55 @@
 
-# Udemy Courses Project
+# New York City Airbnb Project
 
 ### Report Link: [Data Analysis Portfolio.pdf](https://github.com/user-attachments/files/16060150/Data.Analysis.Portfolio.pdf)
 
 ## Project description
 
-This report is carried out to ascertain opportunities to increase revenue and track the performance of courses at Udemy. The report also aims to confirm if “Web Development” courses are the most popular and if increasing the prices of the “Web Development” courses will lead to a proportional increase in revenue.
-
-## Problem Statement
-
-The problem faced by Udemy is figuring out opportunities to increase subsequent quarterly earnings. A time frame of about three weeks was assigned for this project. The following data are required for a better understanding of the problem; Current year and previous year earnings, Courses offered and their subjects, Prices of each course, Users' review/feedback, and Duration of the courses.
-To better understand the business problem, the following questions were asked?
-- What are the business's earnings per subject?
-- What is the number of courses offered during this period and how many were taken (free/paid for)?
-- Which courses/topics bring in the highest revenue and cost?
-- What is the duration of the course(s)?
-- What is the review from users that take the course(s)? Which subjects have the highest number of enrollments? 
-- Which subjects bring in the lowest revenue and cost?
-- Which subjects have the lowest number of enrollments?
+This report is carried out to determine the borough and room type that has the highest earning potential for individuals with available spaces for Airbnb in New York City. The report also aims to confirm which borough, and room type, will have the most reservation.
 
 ## Data Design
+To work with a clean set of data: 
 
-In order to work with a clean set of data:
+1.) Blank cells were filtered out.
 
-1.) Duplicate and blank cells were filtered out.
+2.) Headers were bolded to ensure ease of analysis.
 
-2.) Headers were edited to ensure ease of analysis. 
+3.) The column header titled “neighbourhood_group” was
+modified to “borough” to give a more descriptive header.
 
-3.) Cells containing data inconsistent with other cells on a
-column were adjusted. In this case, “subject: Web Development” was changed to “Web Development”.
-
-Pivot tables on Google Sheets alongside Tableau were utilized to determine and visualize factors and trends regarding each subject at each level respectively.
+Pivot tables on Google Sheets alongside Tableau were utilized to determine and visualize factors and trends regarding each room type in each city respectively.
 
 ## Findings
 
-- Total Subscriptions by Subject
+- Average Price by Room Type
 
-![Udemy Courses Viz 1](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/fee51cb8-6973-4037-95c3-ab836a693dda)
+![NY AirBnB Viz 1](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/8dd47ff7-12f7-44ed-86d5-5a513f62813d)
 
-    "Web Development" courses have the highest number of subscribers, 
-    followed by "Business Finance", "Graphic Design", and "Musical Instrument" courses respectively.
+    The average price of reserving an "Entire Home/Apartment" is the highest across Boroughs, 
+    followed by "Private room", then "Shared room".
 
-- Average Price by Skill Level
+- Average Availability by Borough
 
-![Udemy Course Viz 2](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/9ed5203a-26c7-4614-8459-72c7ae251f73)
+![NY AirBnB Viz 2](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/c4e7f5ad-644c-4ca3-839a-09182db02ae8)
 
-    On average, the price of "Web Development" courses is the highest at the "Intermediate Level", 
-    "Expert Level", "Beginner Level", and "All Levels". While "Graphic Design" courses have the least price on average at the "Expert Level", 
-    and "Musical Instrument" courses have the least price on average at the "Beginner Level" 
-    and "All Levels".
+    On average, "Private rooms" in Staten Island are the most available for reservation in a year. 
+    The next most available spaces are "Shared rooms" in Queens. 
+    While the least available spaces are "Shared rooms" in Staten Island.
 
-- Earning per Year by Skill Level
+- Average Price per Room Type by Borough
 
-![Udemy Courses Viz 4](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/6dce7981-e5d5-42ab-accd-1e69d5ea4b01)
+![NY AirBnB Viz 3](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/82181b5d-a0b5-4560-a91f-e4b161f4d1cb)
 
-- Number of Subscribers per Year by Skill Level
+- Average Listing Count per Room Type by Borough
 
-![Udemy Courses Viz 5](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/56ef64f6-aef8-4ee7-b1e5-31a9ee0ada6f)
+![NY AirBnB Viz 4](https://github.com/saiyan-nous/Data-Analysis-Projects/assets/105250935/58f52f08-bfad-4866-bf77-6bea922a3053)
 
 ## Analysis
 
-From the findings above, we can determine “Web Development” courses to be the most popular courses then followed by “Business Finance”, “Graphic Design”, and Musical Instrument” courses respectively (figure 1). After a 70% fall (the highest of the four courses) in its number of subscribers, it still retains its position as the most popular. The fall in the number of subscribers of each course has caused a decline in Udemy’s revenue.
+From the visualizations above, we can determine that users who require enough room, most users with a family, will potentially make a reservation for an “entire room/apartment“ in “Manhattan” as this has the highest listing count(figure 3), whilst users who prefer their personal space will most likely make a reservation for a “private room” and following the listing count, “private rooms” will most likely be reserved in “Queens”(figure 3). Then users who are working with a low budget will make a reservation for “shared rooms” and following the listing count, “shared rooms” are most likely to be reserved in “Brooklyn” and “Staten Island” respectively.
 
-Furthermore, the cause of the revenue problem is due to the business losing subscribers in 2016 unlike its continuous increase in subscribers from 2011 to 2015(figure 3). This led to the plummeting of revenue in 2016 and 2017. The possible reason for this sudden drop in subscribers might be due to the content of the courses not being satisfactory or insightful enough.
-
-Also, the decline in the number of subscribers might result from customers shifting their interest to an alternative competing company providing more quality content for the courses.
+However, it can be assumed that spaces(room types) in Manhattan will have the most reservations. The reason is that spaces in Manhattan have the highest average price(figure 3) compared to other boroughs and visitors are likely to attach a perception of higher comfort or luxury to the spaces due to the pricing. Also, the listing count for spaces(room types) in Manhattan is quite competitive on average as they have the highest listing count for “entire home/apartment'', second for “private rooms” and third for “shared rooms”.
 
 ## Conclusion
 
-The report shows that charging more for the ”Web Development” courses will help increase Udemy's subsequent revenue, as the “Web Development” courses still have the highest number of subscribers regardless of the fall compared to the previous year. Additional growth in the number of subscribers and revenue can be expected if action is taken to ensure the delivery of more quality course content.
+The report shows that individuals with an entire home/apartment in Manhattan available for Airbnb will most likely earn more than those with an entire home/apartment in Queens, Brooklyn, Bronx, and Staten Island. Individuals with “private rooms” available in Queens will most likely earn more than others, while individuals with “shared rooms” available in Brooklyn and/or Staten Island will most likely earn more than those in other boroughs. This is a result of the demographic of their visitors which are; a wealthy and accompanied visitor will presumably reserve an entire home/apartment in Manhattan, a middle-class lone visitor will presumably reserve a private room in Queens, while a visitor with a low budget will presumably settle for a shared room in Brooklyn or Staten Island.
