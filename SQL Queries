@@ -1,6 +1,6 @@
 ### Question1: 
 
-Produce a SQL Statement that joins all the tables to get the product name, product number and PurchaseTrans
+Produce a SQL Statement that joins all the tables to get the product name, product number, and PurchaseTrans
 
     SELECT PT.TransID, PT.OrderID, CONVERT(Date,PT.OrderDate) OrderDate, CONVERT(date,PT.ShipDate) ShipDate, CONVERT(date,PT.DueDate) DueDate,
 		PT.Supplier, PT.Country,
@@ -10,7 +10,7 @@ Produce a SQL Statement that joins all the tables to get the product name, produ
         INNER JOIN Product P ON P.ProductID = PT.ProductID
 
 ### Question2: 
-Top 10 products ordered in each country on specific date with product detail including product category and net amount
+Top 10 products ordered in each country on a specific date with product details including product category and net amount
 
     WITH CTE AS (
 				SELECT ROW_NUMBER() OVER(partition by Country order by AGGNetPurchaseAmount desc) RankID, a.OrderDate, a.Country, a.ProductName,
@@ -31,7 +31,7 @@ Top 10 products ordered in each country on specific date with product detail inc
 
 
 ### Question3: 
-List of suppliers that offer discount amount on purchased products filtered by Product Category
+List of suppliers that offer discount amounts on purchased products filtered by Product Category
 
     SELECT PT.Supplier, C.CategoryName
     FROM PurchaseTrans PT
@@ -42,11 +42,11 @@ List of suppliers that offer discount amount on purchased products filtered by P
     GROUP BY PT.Supplier, C.CategoryName
 
 ### Question4:
-Create KPI with Low, Medium, High indicator based on Net Purchase Amount with the following
+Create KPI with Low, Medium, and High indicators based on Net Purchase Amount with the following
 conditions:
 - If the Net Purchase Amount is less than $10,000 then “Low”
-- If the Net Purchase Amount between $10,000 and $20,000 then “Medium”
-- If the Net Purchase Amount greater than $20,000 then “HIGH”
+- If the Net Purchase Amount is between $10,000 and $20,000 then “Medium”
+- If the Net Purchase Amount is greater than $20,000 then “HIGH”
 
         SELECT PT.Country, C.CategoryName, P.ProductName, 
 		FORMAT(isnull(SUM((PT.UnitPrice*PT.OrderQty)-((PT.UnitPrice*PT.OrderQty)*PT.UnitPriceDiscount)),0),'C') AGGNetPurchaseAmount,
